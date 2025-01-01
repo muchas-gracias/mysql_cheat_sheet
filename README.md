@@ -27,7 +27,6 @@ margin-bottom:20px;">
 | modify all values in a column| UPDATE table_name SET column_name = new_value; |
 | delete an entire row| DELETE FROM table_name WHERE condition; |
 | remove all rows from the table| DELETE FROM table_name;
- |
 | remove all rows from table| TRUNCATE TABLE table_name;
 | find all values where a certain condition is met| SELECT * FROM table_name WHERE column_name = 2;
 | sort by column ascending| SELECT * FROM table_name ORDER BY column_name ASC; |
