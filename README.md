@@ -15,7 +15,6 @@ margin-bottom:20px;">
 | create new user          |       CREATE USER   |'username'@'localhost' IDENTIFIED BY 'password'; |
 | grant privileges for new user | GRANT ALL PRIVILEGES ON *.* TO 'username'@'localhost';|
 | apply privileges | FLUSH PRIVILEGES; |
-|  
 | create database if one doesn't exist with certain name | CREATE DATABASE IF NOT EXISTS db_name;  |
 | show all databases| SHOW DATABASES;  |
 | show all tables| SHOW TABLES; |
@@ -30,22 +29,16 @@ margin-bottom:20px;">
 | remove all rows from the table| DELETE FROM table_name;
  |
 | remove all rows from table| TRUNCATE TABLE table_name;
- |
 | find all values where a certain condition is met| SELECT * FROM table_name WHERE column_name = 2;
- |
 | sort by column ascending| SELECT * FROM table_name ORDER BY column_name ASC; |
 | sort by column descending| SELECT * FROM table_name ORDER BY column_name DESC; |
 | select all from parameters but limit | SELECT * FROM table_name LIMIT 10  |
 | count rows| SELECT COUNT(*) FROM table_name;
- |
 | find max and min| SELECT MAX(column_name), MIN(column_name) FROM table_name;
- |
-| find average| SELECT AVG(column_name) FROM table_name; |
-|
+| find average| SELECT AVG(column_name) FROM table_name; 
 | find sum | SELECT SUM(column_name) FROM table_name;
 | show current database| SELECT DATABASE();
 | show active connections to database| SHOW PROCESSLIST;
-|
 | backup database to file| mysqldump -u username -p database_name > backup.sql
  | import data| mysql -u username -p database_name < backup.sql;  |
  | commit changes| COMMIT;
