@@ -44,5 +44,8 @@ margin-bottom:20px;">
  | rollback changes| ROLLBACK;
  | start a transaction| START TRANSACTION;
  | rename a table| RENAME TABLE old_table_name TO new_table_name;
+ | dump entire database | mysqldump --no-tablespaces -u <username> -p <database name> > <filename.sql>
+ | dump a specific tables | mysqldump --no-tablespaces -u <username> -p <database> <tablename> > <filename.sql>
+ | retrieve database and put back in to mysql | mysql -u <username> -p <database_name> < <backup_file>.sql >
 
 
